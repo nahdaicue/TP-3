@@ -1,0 +1,64 @@
+<main>
+    <section class="section">
+        <article class="articulo">
+            <h1 class="titulosA">Quien soy</h1>
+
+            <nav class="boton">
+                <button class="botonE" id="boton1" (click)="onClick()" (click)="mostrar_btn1()">🖍</button>
+            </nav>
+
+            <p id="text1">{{datos?.QuienSoy}}</p>
+    
+            <div>
+   
+                <div *ngIf="mostrarInput1">
+                    <input type="text" placeholder="Quien eres?" [(ngModel)]="nuevoQuien.Quien">
+                </div>
+                <br>
+                <div *ngIf="mostrarInput1">
+                    <button class="btn btn-primary" id="boton3" (click)="enviarDatos1()" >Enviar!</button>
+                </div>
+                
+            </div>
+
+        </article>
+        
+        <article class="articulo">
+            <h2 class="titulosA">Estudios</h2>
+
+            <!-- Ves los ? en el codigo interpolado, es porque sino salta error en consola. Como los archivos sos externos,
+            puede dar undefined y al navegador no le gusta semejante barbaridad. La otra opcion era crear un metodo para que 
+            carguen las imagenes de antemano y me da pereza. -->
+            
+            <nav class="boton">
+                <button class="botonE" id="boton2" (click)="mostrar_btn2()">🖍</button>
+            </nav>
+
+            <ul>
+                <li *ngFor="let estudio of datos?.estudios">
+                    <h6>{{ estudio?.donde }}</h6>
+                    <br>
+                    <p id="text2">{{ estudio?.descripcion }}</p>
+                </li>
+            </ul>
+
+            <div>
+                <div *ngIf="mostrarInput2">
+                    <input type="text" placeholder="Donde?" [(ngModel)]="nuevoEstudio.donde">
+
+                </div>
+                <br>
+                <div *ngIf="mostrarInput2">
+                    <input type="text" placeholder="Que estudiaste?" [(ngModel)]="nuevoEstudio.descripcion">
+                </div>
+                <br>
+                <div *ngIf="mostrarInput2">
+                    <button class="btn btn-primary" id="boton3" (click)="enviarDatos2()" >Enviar!</button>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="articulo"></article>
+    </section>
+</main>

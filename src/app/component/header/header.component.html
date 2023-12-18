@@ -1,0 +1,22 @@
+<header class="header">
+      
+    <div class="fondo">
+        <img id="fondoN"[src]="datos?.img?.fotoFondo" alt="fondo_negro">
+    </div>
+
+    <div class="fotoPerfil">
+        <img id="imagenP"[src]="datos?.img?.fotoPerfil" alt="Foto de perfil">
+    </div>
+
+    <div class="titulo"><h1 id="title">{{datos?.nombre}} | {{datos.Profesion}}</h1></div>
+
+</header>
+
+<nav class="nav">
+  <div class="botones">
+    <button type="button" class="btn btn-light" [routerLink]="''">Quién soy</button>
+    <button type="button" class="btn btn-light mr-2" [routerLink]="'/proyectos'">Proyectos</button>
+    <button type="button" class="btn btn-light" [routerLink]="'/contacto'">Contacto</button>
+    <button type="button" class="btn btn-primary mr-2" [routerLink]="'descargar'">Descargar CV</button>
+  </div>
+</nav>

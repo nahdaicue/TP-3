@@ -1,0 +1,27 @@
+
+{
+    "nombre": "Nahuel Cuello",
+
+    "Profesion": "Programador Jr.",
+
+    "QuienSoy": "Soy un apasionado por la tecnología y me encanta aprender cosas nuevas. Me gradué recientemente como programador full stack y estoy buscando mi primer empleo en la industria. Me considero una persona responsable, comprometida y enfocada en los detalles. Me gusta trabajar en equipo y colaborar en proyectos que me permitan crecer como profesional y aportar valor a la empresa. Estoy dispuesto a aprender de mis colegas y aportar mis habilidades y conocimientos para el éxito de la empresa.",
+    
+    "estudios": [
+      
+        {
+        "donde": "Yo Prgramo 4.0",
+        "descripcion": "      Se trata de un programa nacional y federal que tiene como objetivo capacitar a personas en lenguajes y conocimientos sobre programación, testing y habilidades digitales para potenciar la empleabilidad en el sector del software y la tecnología."
+        }
+  ],
+
+
+
+
+
+
+    "img": {
+        "fotoPerfil": "https://raw.githubusercontent.com/nahdaicue/TP-2/master/TP-2/imagenes/nahuel.jpg",
+        "fotoFondo": "https://raw.githubusercontent.com/nahdaicue/TP-2/master/TP-2/imagenes/fondo_negro.jpg"
+    }
+  }
+  
